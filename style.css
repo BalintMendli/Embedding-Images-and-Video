@@ -7,10 +7,10 @@ body {
 }
 
 .navbar {
-  color: #e6e6ff;
+  color: #cc181e;
   width: 100%;
   height: 50px;
-  background-color: #000066;
+  background-color: #f1f1f1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@ body {
 
 .container {
   display: flex;
-  padding: 50px 150px;
+  padding: 14px 0px;
 }
 
 .left {
@@ -28,7 +28,18 @@ body {
 }
 
 .video {
-  width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.respIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; 
 }
 
 .other-videos {
@@ -45,26 +56,27 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #022c68;
+  background-color: #f1f1f1;
   display: flex;
   align-items: center;
 }
 
 li a {
   display: block;
-  color: #e28412;
+  color: #559900;
   padding: 16px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  height: 100%;
-  background-color: #555;
+  /* height: 50%; */
+  background-color: #ec4141;
   color: white;
+  padding-bottom: 6px;
 }
 
 .description {
-  padding: 20px;
+  padding: 15px;
 }
 
 .icon-img {
@@ -83,28 +95,28 @@ li a:hover {
 .videos {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #ddd;
 }
 
 .video-text {
-  padding: 10px;
+  padding: 30px;
 }
 
 .comments {
-  padding: 20px 40px;
+  padding: 0px 40px;
 }
 
 .comments-number {
-  font-size: 20px;
+  font-size: 14px;
   margin-bottom: 30px;
 }
 
 .comment {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding-bottom: 30px;
   border-bottom: 1px solid #ddd;
 }
@@ -118,15 +130,65 @@ li a:hover {
   border-radius: 50%;
 }
 
+.mobile {
+  display: none;
+  width: 100%;
+}
+
+
+.search {
+  padding:8px 15px;
+  background:rgba(50, 50, 50, 0.2);
+  border:0px solid #dbdbdb;
+  font-size: 13px;
+}
+.button {
+  margin:-10px auto;
+
+  position:relative;
+  padding:6px 15px;
+  left:-8px;
+  border:2px solid #cc181e;
+  background-color:#cc181e;
+  color:#fafafa;
+  font-size: 13px;
+}
+.button:hover  {
+  background-color:#fafafa;
+  color:#cc181e;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .other-videos,
   .comments {
     width: 100%;
   }
   .navbar {
-    font-size: 12px;
+
+    font-size: 16px;
+    
   }
-  .lower {
-    flex-direction: column;
+  .container {
+    /* flex-direction: column; */
+    padding: 5px 5px;
+  }
+  .mobile {
+    display: block;
+    padding: 0px 35px;
+    border: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile-none {
+    display: none;
+  }
+  .search {
+    font-size: 7px;
+  }
+  .button {
+    font-size: 13px;
   }
 }

@@ -3,26 +3,53 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Youtube</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+    <title>
+        &nbsp;
+        Watcher
+      </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
   <body>
     <nav class="navbar">
-      &nbsp; &nbsp; Watcher
+      <div>
+          &nbsp; &nbsp;
+      <img src="img/favicon.png" alt="share" class="icon-img" />
+
+       &nbsp; Watcher
+    </div>
+    <div>
+    <input type="text" class="search" placeholder="Search...">
+    <img src="img/search.png" alt="share" class="button" />
+
+  </div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+
+        <li class="mobile-none"><a href="#" >
+          <img src="img/video-camera.png" alt="share" class="icon-img" />
+
+        </a></li>
+        <li><a href="#">
+          <img src="img/menu.png" alt="share" class="icon-img" />
+
+        </a></li>
+        <li class="mobile-none"><a href="#">
+          <img src="img/share-2.png" alt="share" class=" icon-img" />
+
+        </a></li>
+        <li class="mobile-none"><a href="#">
+          <img src="img/bell.png" alt="share" class=" icon-img" />
+
+        </a></li>
       </ul>
     </nav>
     <div class="container">
       <div class="left">
         <div class="video">
           <iframe
-            width="860"
-            height="515"
+            class="respIframe"
             src="https://www.youtube.com/embed/DLGJfa3Xv-0"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -30,13 +57,10 @@
           ></iframe>
         </div>
         <div class="description">
-          <b>Nordic.js 2017 • Guillermo Rauch - Next.js by Example</b><br />
+          <b>Nordic.js 2017 • Guillermo Rauch - Next.js by Example</b><br /><br />
           104.560 Views
-          <span
-            class="likebtn-wrapper"
-            data-theme="drop"
-            data-identifier="item_1"
-          ></span>
+          &nbsp;
+
           <img src="img/share.png" alt="share" class="icon-img" />
           <span>&nbsp;SHARE&nbsp;&nbsp;&nbsp;</span>
           <img src="img/save.png" alt="share" class="icon-img" />
@@ -48,7 +72,7 @@
               src="img/sort.png"
               class="icon-img"
               alt="sort"
-            /><span>&nbsp;SORT BY</span>
+            /><span>&nbsp;&nbsp;SORT BY</span>
           </div>
           <div class="comment">
             <img src="img/photo.jpg" alt="thumbnail" class="photo" />
@@ -90,11 +114,58 @@
             <div class="comment-text">
               <b>Commenter</b>
               <div>Comment</div>
+            </div>
+          </div>
+        </div>
+        <div class="other-videos mobile">
+          <div class="videos">
+            <img src="img/hqdefault.webp" alt="thumbnail" class="video-img" />
+            <div class="video-text">
+              <b>A video mobile</b>
+              <p>Description</p>
+            </div>
+          </div>
+          <div class="videos">
+            <img src="img/hqdefault.webp" alt="thumbnail" class="video-img" />
+            <div class="video-text">
+              <b>A video mobile</b>
+              <p>Description</p>
+            </div>
+          </div>
+          <div class="videos">
+            <img src="img/hqdefault.webp" alt="thumbnail" class="video-img" />
+            <div class="video-text">
+              <b>A video mobile</b>
+              <p>Description</p>
+            </div>
+          </div>
+          <div class="videos">
+            <img src="img/hqdefault.webp" alt="thumbnail" class="video-img" />
+            <div class="video-text">
+              <b>A video mobile</b>
+              <p>Description</p>
+            </div>
+          </div>
+          <div class="videos">
+            <img src="img/hqdefault.webp" alt="thumbnail" class="video-img" />
+            <div class="video-text">
+              <b>A video mobile</b>
+              <p>Description</p>
+            </div>
+          </div>
+          <div class="videos">
+            <img src="img/hqdefault.webp" alt="thumbnail" class="video-img" />
+            <div class="video-text">
+              <b>A video mobile</b>
+              <p>Description</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="other-videos">
+
+      
+
+      <div class="other-videos desktop">
         <div class="videos">
           <img src="img/hqdefault.webp" alt="thumbnail" class="video-img" />
           <div class="video-text">
@@ -138,17 +209,9 @@
           </div>
         </div>
       </div>
+
     </div>
-    <script>
-      (function(d, e, s) {
-        if (d.getElementById('likebtn_wjs')) return;
-        a = d.createElement(e);
-        m = d.getElementsByTagName(e)[0];
-        a.async = 1;
-        a.id = 'likebtn_wjs';
-        a.src = s;
-        m.parentNode.insertBefore(a, m);
-      })(document, 'script', '//w.likebtn.com/js/w/widget.js');
-    </script>
+
   </body>
+
 </html>
