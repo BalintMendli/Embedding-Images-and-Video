@@ -20,7 +20,7 @@ body {
 
 .container {
   display: flex;
-  padding: 14px 0px;
+  padding: 30px 50px;
 }
 
 .left {
@@ -28,13 +28,14 @@ body {
 }
 
 .video {
-    position: relative;
-    overflow: hidden;
+  height: 400px;
+  overflow: hidden;
 }
 
 .respIframe {
-    width: 100%;
-    height: 325px; 
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .other-videos {
@@ -82,7 +83,7 @@ li a:hover {
 }
 
 .other-videos {
-  padding: 20px;
+  padding: 10px;
   border-left: 1px solid #ddd;
 }
 
@@ -126,43 +127,35 @@ li a:hover {
 
 .mobile {
   display: none;
-  width: 100%;
 }
 
 .search {
-  padding:8px 15px;
-  background:rgba(50, 50, 50, 0.2);
-  border:0px solid #dbdbdb;
+  padding: 8px 15px;
+  background: rgba(50, 50, 50, 0.2);
+  border: 0px solid #dbdbdb;
   font-size: 13px;
 }
 .button {
-  margin:-10px auto;
-
-  position:relative;
-  padding:6px 15px;
-  left:-8px;
-  border:2px solid #cc181e;
-  background-color:#cc181e;
-  color:#fafafa;
+  margin: -10px auto;
+  position: relative;
+  padding: 6px 15px;
+  left: -8px;
+  border: 2px solid #cc181e;
+  background-color: #cc181e;
+  color: #fafafa;
   font-size: 13px;
 }
-.button:hover  {
-  background-color:#fafafa;
-  color:#cc181e;
+.button:hover {
+  background-color: #fafafa;
+  color: #cc181e;
 }
 
-@media only screen and (max-width: 600px) {
-  .other-videos,
-  .comments {
-    width: 100%;
-  }
+@media only screen and (max-width: 1089px) {
   .navbar {
-
     font-size: 16px;
-    
   }
   .container {
-    padding: 5px 5px;
+    padding: 30px 30px;
   }
   .mobile {
     display: block;
