@@ -30,16 +30,11 @@ body {
 .video {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%;
 }
 
 .respIframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    border: 0; 
+    height: 325px; 
 }
 
 .other-videos {
@@ -69,7 +64,6 @@ li a {
 }
 
 li a:hover {
-  /* height: 50%; */
   background-color: #ec4141;
   color: white;
   padding-bottom: 6px;
@@ -135,7 +129,6 @@ li a:hover {
   width: 100%;
 }
 
-
 .search {
   padding:8px 15px;
   background:rgba(50, 50, 50, 0.2);
@@ -158,8 +151,6 @@ li a:hover {
   color:#cc181e;
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .other-videos,
   .comments {
@@ -171,7 +162,6 @@ li a:hover {
     
   }
   .container {
-    /* flex-direction: column; */
     padding: 5px 5px;
   }
   .mobile {
@@ -185,9 +175,7 @@ li a:hover {
   .mobile-none {
     display: none;
   }
-  .search {
-    font-size: 7px;
-  }
+
   .button {
     font-size: 13px;
   }
