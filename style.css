@@ -1,0 +1,175 @@
+body {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+}
+
+.navbar {
+  color: #cc181e;
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  padding: 30px 50px;
+}
+
+.left {
+  flex: 1;
+}
+
+.video {
+  height: 400px;
+  overflow: hidden;
+}
+
+.respIframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.other-videos {
+  display: inline-block;
+}
+
+.comments {
+  flex: 1;
+  display: inline-block;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: #559900;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ec4141;
+  color: white;
+  padding-bottom: 6px;
+}
+
+.description {
+  padding: 15px;
+}
+
+.icon-img {
+  width: 20px;
+}
+
+.video-img {
+  width: 150px;
+}
+
+.other-videos {
+  padding: 10px;
+  border-left: 1px solid #ddd;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.video-text {
+  padding: 30px;
+}
+
+.comments {
+  padding: 0px 40px;
+}
+
+.comments-number {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment-text {
+  padding: 10px;
+}
+
+.photo {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.mobile {
+  display: none;
+}
+
+.search {
+  padding: 8px 15px;
+  background: rgba(50, 50, 50, 0.2);
+  border: 0px solid #dbdbdb;
+  font-size: 13px;
+}
+.button {
+  margin: -10px auto;
+  position: relative;
+  padding: 6px 15px;
+  left: -8px;
+  border: 2px solid #cc181e;
+  background-color: #cc181e;
+  color: #fafafa;
+  font-size: 13px;
+}
+.button:hover {
+  background-color: #fafafa;
+  color: #cc181e;
+}
+
+@media only screen and (max-width: 1089px) {
+  .navbar {
+    font-size: 16px;
+  }
+  .container {
+    padding: 30px 30px;
+  }
+  .mobile {
+    display: block;
+    padding: 0px 35px;
+    border: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile-none {
+    display: none;
+  }
+
+  .button {
+    font-size: 13px;
+  }
+}
